@@ -32,7 +32,7 @@
 
 .pilot-tycho-celchu {background-image: url('../images/pilots/Tycho_Celchu.png'); }
 .pilot-arvel-crynyd {background-image: url('../images/pilots/Arvel_Crynyd.png'); }
-.pilot-green-squadron {background-image: url('../images/pilots/Green_Squadron_Pilot.png'); }
+.pilot-green-squadron {background-image: url('../images/pilots/green_squadron_pilot.png'); }
 .pilot-awing-prototype {background-image: url('../images/pilots/Prototype_Pilot.png'); }
 
 .pilot-han-solo {background-image: url('../images/pilots/Han_Solo.png'); }
@@ -47,6 +47,10 @@
     background-image: url('../images/pilots/Chewbacca.png');
 }
 
+.pilot-jan-ors {background-image: url('../images/pilots/jan_ors.png');}
+.pilot-kyle-katarn {background-image: url('../images/pilots/kyle_katarn.png');}
+.pilot-roark-garnet {background-image: url('../images/pilots/Roark-garnet.png');}
+.pilot-rebel-operative {background-image: url('../images/pilots/Hwk_Rebel_Operative.jpg');}
 
 .upgrade-card {
     width: 194px;

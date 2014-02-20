@@ -384,7 +384,86 @@ Ext.define('Miniatures.data.Miniatures', {
             squadPoints : 42,
 
             cardImage   : 'pilot-chewbacca'
+        },
+        {
+            pilotId     : 120,
+            pilotName   : 'Roark Garnet',
+            pilotText   : 'When you are dealt a faceup Damage card, immediately flip it facedown (without resolving its ability).',
+            pilotSkill  : 5,
 
+            shipId      : 11,
+            faction     : 'Rebel Alliance',
+            foundIn     : 'HWK-290',
+            unique      : true,
+
+            upgrades    : 'elite_talent,missile,crew_member,crew_member,modification',
+            squadPoints : 42,
+
+            cardImage   : 'pilot-jan-ors'
+        },
+        {
+            pilotId     : 120,
+            pilotName   : 'Jan Ors',
+            pilotText   : 'When another friendly ship at Range 1-3 is attacking, if you have no stress tokens, you may receive 1 stress token to allow that ship to roll 1 additional attack die.',
+            pilotSkill  : 8,
+
+            shipId      : 12,
+            faction     : 'Rebel Alliance',
+            foundIn     : 'HWK-290',
+            unique      : true,
+
+            upgrades    : 'elite_talent,turret,crew_member,title,modification',
+            squadPoints : 25,
+
+            cardImage   : 'pilot-jan-ors'
+        },
+        {
+            pilotId     : 121,
+            pilotName   : 'Kyle Katarn',
+            pilotText   : 'At the start of the Combat phase, you may assign 1 of your focus tokens to another friendly ship at Range 1-3.',
+            pilotSkill  : 6,
+
+            shipId      : 12,
+            faction     : 'Rebel Alliance',
+            foundIn     : 'HWK-290',
+            unique      : true,
+
+            upgrades    : 'elite_talent,turret,crew_member,modification',
+            squadPoints : 21,
+
+            cardImage   : 'pilot-kyle-katarn'
+        },
+        {
+            pilotId     : 122,
+            pilotName   : 'Roark Garnet',
+            pilotText   : 'At the start of the Combat phase, choose 1 other friendly ship at Range 1-3. Until the end of the phase, treat that ship\'s pilot skill value as "12".',
+            pilotSkill  : 5,
+
+            shipId      : 12,
+            faction     : 'Rebel Alliance',
+            foundIn     : 'HWK-290',
+            unique      : true,
+
+            upgrades    : 'turret,crew_member,title,modification',
+            squadPoints : 19,
+
+            cardImage   : 'pilot-roark-garnet'
+        },
+        {
+            pilotId     : 123,
+            pilotName   : 'Rebel Operative',
+            pilotText   : 'Designed by Corellian Engineering Corporation to resemble a bird in flight, the “hawk” series excels in its role as a personal transport.',
+            pilotSkill  : 2,
+
+            shipId      : 12,
+            faction     : 'Rebel Alliance',
+            foundIn     : 'HWK-290',
+            unique      : false,
+
+            upgrades    : 'turret,crew_member,title,modification',
+            squadPoints : 16,
+
+            cardImage   : 'pilot-rebel-operative'
         }
     ],
 

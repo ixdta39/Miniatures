@@ -28,7 +28,8 @@ Ext.application({
     ],
 
     views: [
-        'Main'
+        'Main',
+        'SquadView'
     ],
     controllers: [
         'MiniaturesController'
@@ -59,7 +60,8 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('Miniatures.view.Main'));
+//        Ext.Viewport.add(Ext.create('Miniatures.view.Main'));
+        Ext.Viewport.add(Ext.create('Miniatures.view.SquadView'));
     },
 
     onUpdated: function() {

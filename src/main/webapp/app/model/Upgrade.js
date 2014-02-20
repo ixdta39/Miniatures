@@ -1,44 +1,36 @@
 /**
- * Pilot Model
+ * Base model for an upgrade card
  */
-Ext.define('Miniatures.model.Pilot', {
+Ext.define('Miniatures.model.Upgrade', {
 
     extend      : 'Ext.data.Model',
+    requires    : [],
 
-    requires    : [
-        'Miniatures.model.Upgrade',
-        'Ext.data.association.HasMany'
-    ],
 
     config      : {
-
-        idProperty  : 'pilotId',
+        idProperty  : 'upgradeId',
 
         fields      : [
             {
-                name    : 'pilotId',
+                name    : 'upgradeId',
                 type    : 'int',
                 useNull : true
             },
             {
-                name    : 'pilotName',
+                name    : 'upgradeName',
                 type    : 'string'
             },
             {
-                name    : 'pilotText',
-                type    : 'text'
+                name    : 'upgradeText',
+                type    : 'string'
             },
             {
-                name    : 'shipId',
-                type    : 'int'
+                name    : 'upgradeType',
+                type    : 'string'
             },
             {
                 name    : 'squadPoints',
                 type    : 'int'
-            },
-            {
-                name    : 'upgrades',
-                type    : 'string'
             },
             {
                 name    : 'cardImage',
@@ -59,17 +51,6 @@ Ext.define('Miniatures.model.Pilot', {
             {
                 name    : 'beta',
                 type    : 'boolean'
-            }
-        ],
-
-
-        associations    : [
-            {
-                type            : 'hasMany',
-                name            : 'upgrades',
-                ownerModel      : 'Miniatures.model.Pilot',
-                associationKey  : 'pilotUpgrades',
-                associatedModel : 'Miniatures.model.Upgrade'
             }
         ]
     }

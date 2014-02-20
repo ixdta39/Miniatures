@@ -7,6 +7,7 @@ Ext.define('Miniatures.view.Main', {
 
         'Ext.dataview.DataView',
 
+        'Miniatures.view.SquadView',
         'Miniatures.form.SquadForm',
         'Miniatures.view.ShipCardView',
         'Miniatures.view.PilotCardView'
@@ -19,20 +20,21 @@ Ext.define('Miniatures.view.Main', {
                 title   : 'Squad',
                 iconCls : 'home',
                 items   : [
+//                    {
+//                        docked: 'top',
+//                        xtype: 'titlebar',
+//                        title: 'Squad Builder'
+//                    },
                     {
-                        docked: 'top',
-                        xtype: 'titlebar',
-                        title: 'Squad Builder'
-                    },
-                    {
-                        xtype       : 'squadform'
-                    },
-                    {
-                        xtype       : 'button',
-                        margin      : '20 10 0 250',
-                        ui          : 'action',
-                        disabled    : false,
-                        iconCls     : 'arrow_right'
+//                        xtype       : 'squadform'
+                        xtype       : 'squadview'
+//                    },
+//                    {
+//                        xtype       : 'button',
+//                        margin      : '20 10 0 250',
+//                        ui          : 'action',
+//                        disabled    : false,
+//                        iconCls     : 'arrow_right'
                     }
                 ]
             },

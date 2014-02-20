@@ -12,8 +12,16 @@ Ext.define('Miniatures.controller.MiniaturesController', {
     config      : {
         stores      : [
             'Ships',
-            'Pilots'
+            'Pilots',
+            'Upgrades'
         ]
+    },
+
+
+    init        : function () {
+        Ext.create('Miniatures.store.Pilots', {
+            storeId : 'squad.Pilots'
+        });
     }
 
 });

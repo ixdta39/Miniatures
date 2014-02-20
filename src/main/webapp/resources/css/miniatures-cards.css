@@ -13,12 +13,6 @@
 .x-wing {background-image: url('../images/ships/x-wing.jpg');}
 .y-wing {background-image: url('../images/ships/y-wing.jpg');}
 
-.upgrade-card {
-    width: 194px;
-    height: 300px;
-}
-
-.crew-nien-nunb {background-image: url('../images/crew/nien-nunb.png');}
 
 .pilot-card {
     width: 300px;
@@ -53,3 +47,57 @@
     background-image: url('../images/pilots/Chewbacca.png');
 }
 
+
+.upgrade-card {
+    width: 194px;
+    height: 300px;
+}
+
+.astromech-r2 {background-image: url('../images/astromechs/R2_Astromech.png'); }
+.astromech-r2-d2 {background-image: url('../images/astromechs/R2-d2.png'); }
+.astromech-r2-f2 {background-image: url('../images/astromechs/R2-F2.png'); }
+.astromech-r5 {background-image: url('../images/astromechs/R5_Astromech.png'); }
+.astromech-r5-d8 {background-image: url('../images/astromechs/R5-D8.png'); }
+.astromech-r5-k6 {background-image: url('../images/astromechs/R5-K6.png'); }
+
+.bomb-proton-bomb {background-image: url('../images/bombs/Proton_bombs.png');}
+.bomb-proximity-mine {background-image: url('../images/bombs/Proximity_Mines.png'); }
+.bomb-seismic-charges {background-image: url('../images/bombs/Seismic_Charges.png'); }
+
+.crew-chewbacca {background-image: url('../images/crew/Chewbacca_Crew.png');}
+.crew-darth-vader {background-image: url('../images/crew/Darth-vader.png');}
+.crew-flight-instructor {background-image: url('../images/crew/Flight_Instructor.png');}
+.crew-gunner {background-image: url('../images/crew/Gunner.png');}
+.crew-intelligence-agent {background-image: url('../images/crew/Intelligence-agent.png');}
+.crew-luke-skywalker {background-image: url('../images/crew/Luke_Skywalker_Crew.png');}
+.crew-mercenary-copilot {background-image: url('../images/crew/Mercenary_Copilot.png');}
+.crew-navigator {background-image: url('../images/crew/Navigator.png');}
+.crew-nien-nunb {background-image: url('../images/crew/Nien_Nunb.png');}
+.crew-rebel-captive {background-image: url('../images/crew/Rebel-captive.png');}
+.crew-recon-specialist {background-image: url('../images/crew/Recon-specialist.png');}
+.crew-saboteur {background-image: url('../images/crew/Saboteur.png');}
+.crew-weapons-engineer {background-image: url('../images/crew/Weapons_Engineer.png');}
+
+.elite-adrenaline-rush {background-image: url('../images/elite_talents/Adrenaline-rush.png');}
+.elite-daredevil {background-image: url('../images/elite_talents/Daredevil.png');}
+.elite-deadeye {background-image: url('../images/elite_talents/Deadeye.jpg');}
+.elite-determination {background-image: url('../images/elite_talents/Determination.jpg');}
+.elite-draw-their-fire {background-image: url('../images/elite_talents/Draw_Their_Fire.png');}
+.elite-elusiveness {background-image: url('../images/elite_talents/Elusiveness.png');}
+.elite-expert-handling {background-image: url('../images/elite_talents/Expert-handling.png');}
+.elite-expose {background-image: url('../images/elite_talents/Expose.png');}
+.elite-marksmanship {background-image: url('../images/elite_talents/Marksmanship.png');}
+.elite-opportunist {background-image: url('../images/elite_talents/Opportunist.png');}
+.elite-push-the-limit {background-image: url('../images/elite_talents/Push_The_Limit.png');}
+.elite-squad-leader {background-image: url('../images/elite_talents/Squad_Leader.png');}
+.elite-swarm-tactics {background-image: url('../images/elite_talents/Swarm_Tactics.png');}
+.elite-veteran-instincts {background-image: url('../images/elite_talents/Veteran_Instincts.png');}
+
+.missile-assault-missiles {background-image: url('../images/missiles/Assault_Missiles.png');}
+.missile-cluster-missiles {background-image: url('../images/missiles/Cluster_Missiles.png');}
+.missile-concussion-missiles {background-image: url('../images/missiles/Concussion_Missiles.png');}
+.missile-homing-missiles {background-image: url('../images/missiles/Homing_Missiles.png');}
+.missile-ion-pulse-missiles {background-image: url('../images/missiles/Ion-pulse-missiles.png');}
+
+.torpedo-advanced-proton-torpedoes {background-image: url('../images/torpedoes/Advanced_Proton_Torpedoes.png');}
+.torpedo-proton-torpedoes {background-image: url('../images/torpedoes/Proton-torpedoes.png');}

@@ -72,6 +72,10 @@
             "update": "delta"
         },
         {
+            "path": "resources/css/miniatures-styles.css",
+            "update": "delta"
+        },
+        {
             "path": "resources/css/miniatures-icons.css",
             "update": "delta"
         },

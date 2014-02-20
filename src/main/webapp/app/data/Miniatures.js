@@ -282,7 +282,7 @@ Ext.define('Miniatures.data.Miniatures', {
             shipId      : 2,
             faction     : 'Rebel Alliance',
 
-            upgrades    : 'torpedo',
+            upgrades    : 'torpedo,astromech',
             squadPoints : 25,
 
             cardImage   : 'pilot-biggs-darklighter'
@@ -389,20 +389,244 @@ Ext.define('Miniatures.data.Miniatures', {
     ],
 
 
-    cardData    : [
+    upgradeData     : [
         {
-            cardType    : 'torpedo',
-            cardName    : 'Proton Torpedoes',
-            cardText    : '',
+            upgradeId   : 1,
+            upgradeName : 'Proton Torpedoes',
+            upgradeText : 'Attack (target lock): Spend your target lock and discard this card to perform this attack. You may change 1 of your Focus results to a Critical Hit result.',
+            upgradeType : 'torpedo',
+            attack      : 4,
+            range       : '2,3',
             cardImage   : 'torpedo-proton-torpedoes',
             squadPoints : 4
         },
         {
-            cardType    : 'torpedo',
-            cardName    : 'Advanced Proton Torpedoes',
-            cardText    : '',
+            upgradeId   : 2,
+            upgradeName : 'Advanced Proton Torpedoes',
+            upgradeText : 'Attack (target lock): Spend your target lock and discard this card to perform this attack. You may change up to 3 of your blank results to Focus results.',
+            upgradeType : 'torpedo',
+            attack      : 5,
+            range       : '1',
             cardImage   : 'torpedo-advanced-proton-torpedoes',
             squadPoints : 6
+        },
+        {
+            upgradeId   : 3,
+            upgradeName : 'R2 Astromech',
+            upgradeText : 'You may treat all 1- and 2-speed maneuvers as green maneuvers.',
+            upgradeType : 'astromech',
+            cardImage   : 'astromech-r2',
+            squadPoints : 1
+        },
+        {
+            upgradeId   : 4,
+            upgradeName : 'R2-D2',
+            upgradeText : 'After executing a green maneuver, you may recover 1 shield (up to your shield value).',
+            upgradeType : 'astromech',
+            cardImage   : 'astromech-r2-d2',
+            unique      : true,
+            squadPoints : 4
+        },
+        {
+            upgradeId   : 5,
+            upgradeName : 'R2-F2',
+            upgradeText : 'Action: Increase your agility value by 1 until the end of this game round.',
+            upgradeType : 'astromech',
+            cardImage   : 'astromech-r2-f2',
+            unique      : true,
+            squadPoints : 3
+        },
+        {
+            upgradeId   : 6,
+            upgradeName : 'R5 Astromech',
+            upgradeText : 'During the End phase, you may choose 1 of your faceup Damage cards with the Ship trait and flip it facedown.',
+            upgradeType : 'astromech',
+            cardImage   : 'astromech-r5',
+            squadPoints : 1
+        },
+        {
+            upgradeId   : 7,
+            upgradeName : 'R5-D8',
+            upgradeText : 'Action: Roll 1 defense die. On an Evade or Focus result, discard 1 of your facedown Damage cards.',
+            upgradeType : 'astromech',
+            cardImage   : 'astromech-r5-d8',
+            squadPoints : 3
+        },
+        {
+            upgradeId   : 8,
+            upgradeName : 'R5-K6',
+            upgradeText : 'After spending your target lock, roll 1 defense die. On an Evade result, immediately acquire a target lock on that same ship. You cannot spend this target lock during this attack.',
+            upgradeType : 'astromech',
+            cardImage   : 'astromech-r5-k6',
+            squadPoints : 2
+        },
+        {
+            upgradeId   : 9,
+            upgradeName : 'Adrenaline Rush',
+            upgradeText : 'When you reveal a red maneuver you may discard this card to treat that maneuver as a white maneuver until the end of the Activation phase.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-adrenaline-rush',
+            squadPoints : 1
+        },
+        {
+            upgradeId   : 10,
+            upgradeName : 'Daredevil',
+            upgradeText : 'Action: Execute a red (Left Turn 1) or (Right Turn 1) maneuver. Then, if you do not have the Boost action icon, roll 2 attack dice. Suffer any damage (Hit) and critical damage (Critical Hit) rolled.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-daredevil',
+            squadPoints : 3
+        },
+        {
+            upgradeId   : 11,
+            upgradeName : 'Deadeye',
+            upgradeText : 'You may treat the \'Attack (target lock):\' header as \'Attack (focus):\'. When an attack instructs you to spend a target lock, you may spend a focus token instead.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-deadeye',
+            squadPoints : 1
+        },
+        {
+            upgradeId   : 12,
+            upgradeName : 'Determination',
+            upgradeText : 'When you are dealt a faceup Damage card with the Pilot trait, discard it immediately without resolving its effect.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-determination',
+            squadPoints : 1
+        },
+        {
+            upgradeId   : 13,
+            upgradeName : 'Draw Their Fire',
+            upgradeText : 'When a friendly ship at Range 1 is hit by an attack, you may suffer 1 of the uncanceled Critical Hit results instead of the target ship.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-draw-their-fire',
+            squadPoints : 1
+        },
+        {
+            upgradeId   : 14,
+            upgradeName : 'Elusiveness',
+            upgradeText : 'When defending, you may receive 1 stress token to choose 1 attack die. The attacker must reroll that die. If you have at least 1 stress token, you cannot use this ability.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-elusiveness',
+            squadPoints : 2
+        },
+        {
+            upgradeId   : 15,
+            upgradeName : 'Expert Handling',
+            upgradeText : 'Action: Perform a free barrel roll action. If you do not have the Barrel Roll action icon, receive 1 stress token. You may then remove 1 enemy target lock from your ship.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-expert-handling',
+            squadPoints : 2
+        },
+        {
+            upgradeId   : 16,
+            upgradeName : 'Expose',
+            upgradeText : 'Action: Until the end of the round, increase your primary weapon value by 1 and decrease your agility value by 1.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-expose',
+            squadPoints : 4
+        },
+        {
+            upgradeId   : 17,
+            upgradeName : 'Marksmanship',
+            upgradeText : 'Action: When attacking this round, you may change 1 of your Focus results to a Critical Hit result and all your other Focus results to Hit results.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-marksmanship',
+            squadPoints : 3
+        },
+        {
+            upgradeId   : 18,
+            upgradeName : 'Opportunist',
+            upgradeText : 'When attacking if the defender does not have any Focus or Evade tokens you may receive 1 Stress token to roll 1 additional Attack die. You may not use this ability if you have any Stress tokens.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-opportunist',
+            squadPoints : 4
+        },
+        {
+            upgradeId   : 19,
+            upgradeName : 'Push The Limit',
+            upgradeText : 'Once per round, after you perform an action, you may perform 1 free action shown in your action bar. Then receive 1 stress token.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-push-the-limit',
+            squadPoints : 3
+        },
+        {
+            upgradeId   : 20,
+            upgradeName : 'Squad Leader',
+            upgradeText : 'Action: Choose 1 ship at Range 1-2 that has a lower pilot skill than you. The chosen ship may immediately perform 1 free action.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-squad-leader',
+            unique      : true,
+            squadPoints : 2
+        },
+        {
+            upgradeId   : 21,
+            upgradeName : 'Swarm Tactics',
+            upgradeText : 'At the start of the Combat phase, choose 1 friendly ship at Range 1. Until the end of this phase, treat the chosen ship as if its pilot skill were equal to your pilot skill.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-swarm-tactics',
+            squadPoints : 2
+        },
+        {
+            upgradeId   : 22,
+            upgradeName : 'Veteran Instincts',
+            upgradeText : 'Increase your pilot skill value by 2.',
+            upgradeType : 'elite_talent',
+            cardImage   : 'elite-veteran-instincts',
+            squadPoints : 1
+        },
+        {
+            upgradeId   : 23,
+            upgradeName : 'Assault Missiles',
+            upgradeText : 'Attack (target lock): Spend your target lock and discard this card to perform this attack. If this attack hits, each other ship at Range 1 of the defender suffers 1 damage.',
+            upgradeType : 'missile',
+            attack      : 4,
+            range       : '2,3',
+            cardImage   : 'missile-assault-missiles',
+            squadPoints : 5
+        },
+        {
+            upgradeId   : 24,
+            upgradeName : 'Cluster Missiles',
+            upgradeText : 'Attack (target lock): Spend your target lock and discard this card to perform this attack twice.',
+            upgradeType : 'missile',
+            attack      : 3,
+            range       : '1,2',
+            cardImage   : 'missile-cluster-missiles',
+            foundIn     : 'A-W,TIE-A',
+            squadPoints : 4
+        },
+        {
+            upgradeId   : 25,
+            upgradeName : 'Concussion Missiles',
+            upgradeText : 'Attack (target lock): Spend your target lock and discard this card to peform this attack. You may change 1 of your blank results to a Hit result.',
+            upgradeType : 'missile',
+            attack      : 4,
+            range       : '2,3',
+            cardImage   : 'missile-cluster-missiles',
+            foundIn     : 'A-W,TIE-A,MILL-FAL',
+            squadPoints : 4
+        },
+        {
+            upgradeId   : 26,
+            upgradeName : 'Homing Missiles',
+            upgradeText : 'Attack (target lock): Discard this card to peform this attack. The defender cannot spend evade tokens during this attack.',
+            upgradeType : 'missile',
+            attack      : 4,
+            range       : '2,3',
+            cardImage   : 'missile-homing-missiles',
+            foundIn     : 'A-W,SLV-1',
+            squadPoints : 5
+        },
+        {
+            upgradeId   : 27,
+            upgradeName : 'Ion Pulse Missiles',
+            upgradeText : 'Attack (target lock): Discard this card to peform this attack. If this attack hits, the defender suffers 1 damage and recieves 2 ion tokens. Then cancel all dice results.',
+            upgradeType : 'missile',
+            attack      : 3,
+            range       : '2,3',
+            cardImage   : 'missile-ion-pulse-missiles',
+            foundIn     : 'Z-95,TIE-D',
+            beta        : true,
+            squadPoints : 3
         }
     ]
 

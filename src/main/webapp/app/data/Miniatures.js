@@ -73,7 +73,7 @@ Ext.define('Miniatures.data.Miniatures', {
             attack      : 3,
             agility     : 1,
             hull        : 3,
-            shield      : 5,
+            shields     : 5,
             shipCard    : 'b-wing',
             shipFaction : 'Rebel Alliance',
             actions     : 'barrel_roll,target_lock,focus',
@@ -303,7 +303,7 @@ Ext.define('Miniatures.data.Miniatures', {
         },
         {
             pilotId     : 31,
-            pilotName   : 'Tycho Celchu',
+            pilotName   : 'Arvel Crynyd',
             pilotText   : 'You may declare an enemy ship inside your firing arc that you are touching as the target of your attack.',
             pilotSkill  : 6,
 
@@ -386,28 +386,12 @@ Ext.define('Miniatures.data.Miniatures', {
             cardImage   : 'pilot-chewbacca'
         },
         {
-            pilotId     : 120,
-            pilotName   : 'Roark Garnet',
-            pilotText   : 'When you are dealt a faceup Damage card, immediately flip it facedown (without resolving its ability).',
-            pilotSkill  : 5,
-
-            shipId      : 11,
-            faction     : 'Rebel Alliance',
-            foundIn     : 'HWK-290',
-            unique      : true,
-
-            upgrades    : 'elite_talent,missile,crew_member,crew_member,modification',
-            squadPoints : 42,
-
-            cardImage   : 'pilot-jan-ors'
-        },
-        {
-            pilotId     : 120,
+            pilotId     : 50,
             pilotName   : 'Jan Ors',
             pilotText   : 'When another friendly ship at Range 1-3 is attacking, if you have no stress tokens, you may receive 1 stress token to allow that ship to roll 1 additional attack die.',
             pilotSkill  : 8,
 
-            shipId      : 12,
+            shipId      : 5,
             faction     : 'Rebel Alliance',
             foundIn     : 'HWK-290',
             unique      : true,
@@ -418,12 +402,12 @@ Ext.define('Miniatures.data.Miniatures', {
             cardImage   : 'pilot-jan-ors'
         },
         {
-            pilotId     : 121,
+            pilotId     : 51,
             pilotName   : 'Kyle Katarn',
             pilotText   : 'At the start of the Combat phase, you may assign 1 of your focus tokens to another friendly ship at Range 1-3.',
             pilotSkill  : 6,
 
-            shipId      : 12,
+            shipId      : 5,
             faction     : 'Rebel Alliance',
             foundIn     : 'HWK-290',
             unique      : true,
@@ -434,12 +418,12 @@ Ext.define('Miniatures.data.Miniatures', {
             cardImage   : 'pilot-kyle-katarn'
         },
         {
-            pilotId     : 122,
+            pilotId     : 52,
             pilotName   : 'Roark Garnet',
             pilotText   : 'At the start of the Combat phase, choose 1 other friendly ship at Range 1-3. Until the end of the phase, treat that ship\'s pilot skill value as "12".',
             pilotSkill  : 5,
 
-            shipId      : 12,
+            shipId      : 5,
             faction     : 'Rebel Alliance',
             foundIn     : 'HWK-290',
             unique      : true,
@@ -450,12 +434,12 @@ Ext.define('Miniatures.data.Miniatures', {
             cardImage   : 'pilot-roark-garnet'
         },
         {
-            pilotId     : 123,
+            pilotId     : 53,
             pilotName   : 'Rebel Operative',
             pilotText   : 'Designed by Corellian Engineering Corporation to resemble a bird in flight, the “hawk” series excels in its role as a personal transport.',
             pilotSkill  : 2,
 
-            shipId      : 12,
+            shipId      : 5,
             faction     : 'Rebel Alliance',
             foundIn     : 'HWK-290',
             unique      : false,

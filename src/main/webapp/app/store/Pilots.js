@@ -15,7 +15,7 @@ Ext.define('Miniatures.store.Pilots', {
 
         model   : 'Miniatures.model.Pilot',
 
-        data    : Miniatures.data.Miniatures.pilotData
+//        data    : Miniatures.data.Miniatures.pilotData
     },
 
 

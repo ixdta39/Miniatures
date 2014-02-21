@@ -1,7 +1,119 @@
+.stats-container .stats {
+	font-family: 'Aldrich', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.stats-container .stats > div {
+	display: inline-block;
+	height: 30px;
+}
+
+.stats-container .icon-stat {
+	background-repeat: no-repeat;
+	background-position: middle 5px;
+	padding-left: 30px;
+}
+
+.stats-container .pilot {
+	color: #f57f20;
+}
+
+.stats-container .stat-primary {
+	color: #cd1b3d;
+	background-image: url("../icons/primary-attack-25.png");
+}
+
+.stats-container .stat-energy {
+	color: #D396CC;
+	background-image: url("../icons/energy_icon_sm.png");
+}
+
+.stats-container .stat-agility {
+	color: #6dbe45;
+	background-image: url("../icons/agility-25.png");
+}
+
+.stats-container .stat-hull {
+	color: #eeea1e;
+	background-image: url("../icons/hull-25.png");
+}
+
+.stats-container .stat-shields {
+	color: #7fd5e7;
+	background-image: url("../icons/shields-25.png");
+}
+
+.stats-container .icon-action {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	background-repeat: no-repeat;
+}
+
+.stats-container .action-focus {
+	background-image: url("../icons/focus.png");
+	background-position: 0 4px;
+}
+
+.stats-container .action-target-lock {
+	background-image: url("../icons/target_lock.png");
+}
+
+.stats-container .action-evade {
+	background-image: url("../icons/evade.png");
+	background-position: 3px 3px;
+}
+
+.stats-container .action-barrel-roll {
+	background-image: url("../icons/barrel_roll.png");
+}
+
+.stats-container .action-boost {
+	background-image: url("../icons/boost.png");
+	background-position: 4px 2px;
+}
+
+.stats-container .action-cloak {
+	background-image: url("../icons/cloak.png");
+	background-position: 3px 3px;
+}
+
+.stats-container .action-recover {
+	background-image: url("../icons/recover.png");
+	background-position: 4px 2px;
+	width: 24px;
+}
+
+.stats-container .action-reinforce {
+	background-image: url("../images/reinforce.png");
+	background-position: 2px 2px;
+}
+
+.stats-container .action-jam {
+	background-image: url("../icons/jam.png");
+	background-position: 2px 1px;
+	width: 22px;
+}
+
+.stats-container .action-coordinate {
+	background-image: url("../icons/coordinate.png");
+	background-position: 0 0;
+    width: 29px;
+}
+
+
+
+.ship-attribute {
+    height: 40px;
+    width: 40px;
+    float: left;
+}
 
 .pilot-name{
     color: #757575;
-    font-size: .917em;
+    font-size: 30px;
     /* font-size: .833em; */
     font-weight: bold;
     line-height: 1.44;

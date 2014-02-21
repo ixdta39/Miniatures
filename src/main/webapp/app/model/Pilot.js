@@ -21,6 +21,10 @@ Ext.define('Miniatures.model.Pilot', {
                 useNull : true
             },
             {
+                name    : 'pilotSkill',
+                type    : 'int'
+            },
+            {
                 name    : 'pilotName',
                 type    : 'string'
             },

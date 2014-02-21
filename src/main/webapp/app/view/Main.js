@@ -14,6 +14,9 @@ Ext.define('Miniatures.view.Main', {
     ],
     config: {
         tabBarPosition: 'bottom',
+        tabBar  : {
+            hidden  : true
+        },
 
         items: [
             {
@@ -38,21 +41,21 @@ Ext.define('Miniatures.view.Main', {
                     }
                 ]
             },
-            {
-                title   : 'Ships',
-                iconCls : 'ships-icon',
-
-                items   : [
-                    {
-                        xtype   : 'titlebar',
-                        docked  : 'top',
-                        title   : 'Ships'
-                    },
-                    {
-                        xtype   : 'shipcardview'
-                    }
-                ]
-            },
+//            {
+//                title   : 'Ships',
+//                iconCls : 'ships-icon',
+//
+//                items   : [
+//                    {
+//                        xtype   : 'titlebar',
+//                        docked  : 'top',
+//                        title   : 'Ships'
+//                    },
+//                    {
+//                        xtype   : 'shipcardview'
+//                    }
+//                ]
+//            },
             {
                 title   : 'Pilots',
                 iconCls : 'pilots-icon',
@@ -67,19 +70,19 @@ Ext.define('Miniatures.view.Main', {
                         xtype   : 'pilotcardview'
                     }
                 ]
-            },
-            {
-                title: 'Crew Members',
-                iconCls: 'crew-members-icon',
-
-                items   : [
-                    {
-                        xtype   : 'titlebar',
-                        docked  : 'top',
-                        title   : 'Crew Members'
-                    }
-                ],
-                html    : '<div class="pilot-card pilot-luke-skywalker"></div>'
+//            },
+//            {
+//                title: 'Crew Members',
+//                iconCls: 'crew-members-icon',
+//
+//                items   : [
+//                    {
+//                        xtype   : 'titlebar',
+//                        docked  : 'top',
+//                        title   : 'Crew Members'
+//                    }
+//                ],
+//                html    : '<div class="pilot-card pilot-luke-skywalker"></div>'
             }
         ]
     }

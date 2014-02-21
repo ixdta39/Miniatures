@@ -25,11 +25,14 @@ Ext.define('Miniatures.controller.MiniaturesController', {
             storeId : 'squad.Pilots'
         });
 
-//        me.getPilotsStore();
+        Ext.getStore('Pilots').add(Miniatures.data.Miniatures.pilotData);
 
         me.control({
             'squadview' : {
-                itemtap   : me.onSquadViewItemTap
+                itemtap     : me.onSquadViewItemTap
+            },
+            'squadview button[name=addShips]': {
+                tap : me.switchToPilotCardView
             }
         });
     },
@@ -46,6 +49,15 @@ Ext.define('Miniatures.controller.MiniaturesController', {
             hideOnMaskTap   : true
         });
         pilotWindow.show();
+    },
+
+
+    switchToPilotCardView: function () {
+        var main = Ext.ComponentQuery.query('tabpanel')[0];
+
+        if (main) {
+            main.setActiveItem(1);
+        }
     }
 
 });

@@ -7,8 +7,7 @@ Ext.define('Miniatures.store.Pilots', {
 
 
     requires    : [
-        'Miniatures.model.Pilot',
-        'Miniatures.data.Miniatures'
+        'Miniatures.model.Pilot'
     ],
 
     config      : {

@@ -27,8 +27,15 @@ Ext.define('Miniatures.view.PilotCardView', {
 
         if (pilots && pilots.getCount() > 0) {
             pilots.each(function (pilot) {
+
                 me.add({
-                    html    : Ext.String.format('<div class="pilot-card {0}" style="top: -5px;"></div>', pilot.get('cardImage'))
+                    xtype       : 'dataview',
+                    itemTpl     : '<div class="pilot-card {cardImage}" style="top: -5px;"></div>',
+                    scrollable  : null,
+                    store       : {
+                        model   : 'Miniatures.model.Pilot',
+                        data    : [pilot.data]
+                    }
                 });
             }, me);
         }

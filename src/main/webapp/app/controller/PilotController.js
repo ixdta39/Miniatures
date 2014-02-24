@@ -27,12 +27,12 @@ Ext.define('Miniatures.controller.PilotController', {
             newPilot,
             pilotView   = dataView.up('pilotcardview');
 
-        if (pilot && pilot.get('unique')) {
-            newPilot    = pilot;
-            Ext.getStore('Pilots').remove(pilot);
-        } else {
+//        if (pilot && pilot.get('unique')) {
+//            newPilot    = pilot;
+//            Ext.getStore('Pilots').remove(pilot);
+//        } else {
             newPilot    = pilot.copy();
-        }
+//        }
 
         if (newPilot) {
             Ext.getStore('squad.Pilots').add(newPilot);

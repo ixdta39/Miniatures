@@ -57,7 +57,9 @@ Ext.define('Miniatures.view.SquadView', {
     setSquad: function (squad) {
         var me = this;
 
-        me.squad    = squad;
-        Ext.getStore('squad.Pilots');
+        if (me.squad !== squad) {
+            me.squad    = squad;
+            Ext.getStore('squad.Pilots').removeAll();
+        }
     }
 });

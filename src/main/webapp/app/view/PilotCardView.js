@@ -19,7 +19,7 @@ Ext.define('Miniatures.view.PilotCardView', {
 
     initialize: function () {
         var me      = this,
-            pilots  = Ext.getStore('Pilots');
+            pilots  = me.config.pilots || Ext.getStore('Pilots');
 
         if (me.shipId) {
             pilots  = pilots.getPilotsByShipId(me.shipId);

@@ -13,6 +13,7 @@ Ext.define('Miniatures.controller.MiniaturesController', {
         stores      : [
             'Ships',
             'Pilots',
+            'Squads',
             'Upgrades'
         ]
     },
@@ -31,8 +32,8 @@ Ext.define('Miniatures.controller.MiniaturesController', {
             'squadview' : {
                 itemtap     : me.onSquadViewItemTap
             },
-            'squadview button[name=addShips]': {
-                tap : me.switchToPilotCardView
+            'squadview button[name=showSquadSelection]': {
+                tap : me.showSquadSelection
             }
         });
     },
@@ -52,12 +53,71 @@ Ext.define('Miniatures.controller.MiniaturesController', {
     },
 
 
-    switchToPilotCardView: function () {
-        var main = Ext.ComponentQuery.query('tabpanel')[0];
+    showSquadSelection: function (button) {
+        var me          = this,
+            squads      = Ext.getStore('Squads'),
+            squadView   = Ext.ComponentQuery.query('squadview')[0],
+            squadSelect;
 
-        if (main) {
-            main.setActiveItem(1);
+        squadSelect     = Ext.create('Ext.Panel', {
+            name            : 'squadSelectionPanel',
+            modal           : true,
+            centered        : true,
+            hideOnMaskTap   : true,
+            defaults        : {
+                handler     : Ext.bind(me.addPilotToSquad, me)
+            },
+            items           : [
+                {
+                    xtype       : 'button',
+                    title       : 'New Rebel Squad',
+                    squad       : Ext.create('Miniatures.model.Squad', {faction: 'Rebel Alliance'}),
+                    iconCls     : 'rebel-20'
+                },
+                {
+                    xtype       : 'button',
+                    squad       : Ext.create('Miniatures.model.Squad', {faction: 'Galactic Empire'}),
+                    iconCls     : 'imperial-20'
+                },
+                {
+                    xtype       : 'button',
+                    squad       : squadView.squad,
+                    iconCls     : 'compose',
+                    disabled    : !squadView.squad
+                }
+            ]
+        });
+
+//        squads.each({}, me);
+
+        squadSelect.show();
+    },
+
+
+    addPilotToSquad: function (button) {
+        if (!button || !button.squad) {
+            return;
         }
+
+        var me              = this,
+            pilots          = Ext.getStore('Pilots'),
+            squadView       = Ext.ComponentQuery.query('squadview')[0],
+            pilotView,
+            squadPanel      = button.up('panel[name=squadSelectionPanel]'),
+            eligiblePilots;
+
+        squadPanel.destroy();
+
+        pilotView       = Ext.create('widget.pilotcardview', {
+            modal           : true,
+            centered        : true,
+
+            hideOnMaskTap   : true
+        });
+
+        pilotView.show();
+
+        squadView.setSquad(button.squad);
     }
 
 });

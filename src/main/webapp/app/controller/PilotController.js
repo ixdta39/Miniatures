@@ -25,10 +25,11 @@ Ext.define('Miniatures.controller.PilotController', {
     onAddPilotRequest: function (dataView, index, target, pilot) {
         var me          = this,
             newPilot,
-            mainView    = Ext.ComponentQuery.query('tabpanel')[0];
+            pilotView   = dataView.up('pilotcardview');
 
         if (pilot && pilot.get('unique')) {
             newPilot    = pilot;
+            Ext.getStore('Pilots').remove(pilot);
         } else {
             newPilot    = pilot.copy();
         }
@@ -37,8 +38,8 @@ Ext.define('Miniatures.controller.PilotController', {
             Ext.getStore('squad.Pilots').add(newPilot);
         }
 
-        if (mainView) {
-            mainView.setActiveItem(0);
+        if (pilotView && pilotView.config.modal) {
+            pilotView.destroy();
         }
     }
 

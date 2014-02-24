@@ -211,6 +211,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 1,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : 'elite_talent',
             squadPoints : 31,
@@ -225,6 +226,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 1,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : 'elite_talent',
             squadPoints : 28,
@@ -239,6 +241,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 2,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : 'elite_talent',
             squadPoints : 29,
@@ -253,6 +256,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 2,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : 'elite_talent',
             squadPoints : 28,
@@ -267,6 +271,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 2,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : '',
             squadPoints : 26,
@@ -281,6 +286,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 2,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : 'torpedo,astromech',
             squadPoints : 25,
@@ -295,6 +301,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 3,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : 'elite_talent,missiles,modification',
             squadPoints : 26,
@@ -309,6 +316,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 3,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : 'missiles,modification',
             squadPoints : 23,
@@ -351,6 +359,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 11,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : 'elite_talent,missile,crew_member,crew_member,modification',
             squadPoints : 46,
@@ -365,6 +374,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 11,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : 'elite_talent,missile,crew_member,crew_member,modification',
             squadPoints : 44,
@@ -379,6 +389,7 @@ Ext.define('Miniatures.data.Miniatures', {
 
             shipId      : 11,
             faction     : 'Rebel Alliance',
+            unique      : true,
 
             upgrades    : 'elite_talent,missile,crew_member,crew_member,modification',
             squadPoints : 42,

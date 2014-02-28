@@ -12,7 +12,7 @@ Ext.define('Miniatures.store.Pilots', {
 
     config      : {
 
-        model   : 'Miniatures.model.Pilot',
+        model   : 'Miniatures.model.Pilot'
 
 //        data    : Miniatures.data.Miniatures.pilotData
     },

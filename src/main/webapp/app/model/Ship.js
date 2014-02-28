@@ -15,7 +15,7 @@ Ext.define('Miniatures.model.Ship', {
             {
                 name    : 'shipId',
                 type    : 'int',
-                useNull : true,
+                useNull : true
             },
             {
                 name    : 'shipType',
